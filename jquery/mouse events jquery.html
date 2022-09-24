@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J Query Prsctice</title>
+
+    <link rel="stylesheet" href="Jquery 1.css">
+
+    <script src="js file/jquery.js"></script>
+</head>
+<body>
+    
+    <div id="box" class="test-1">
+        <h3>Test 1</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque rem vitae aspernatur adipisci quod numquam tempora accusantium a fugit?</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#box').click(function(){
+                $('#box').css('background-color','blue');
+               // var a = $('#box').html();
+               // console.log(a);
+            });
+            $('#box').dbclick(function(){
+                $('#box').css('background-color','pink');
+        });
+        });
+    </script>
+</body>
+</html>

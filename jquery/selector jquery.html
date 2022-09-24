@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J Query Prsctice</title>
+
+    <link rel="stylesheet" href="Jquery 1.css">
+
+    <script src="js file/jquery.js"></script>
+</head>
+<body>
+    <div class="test-1">
+        <h3>Test 1</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque rem vitae aspernatur adipisci quod numquam tempora accusantium a fugit?</p>
+    </div>
+
+    <ul id="list">
+        <li>Orange</li>
+        <li class="test">Grapes</li>
+        <li>Banana</li>
+        <li class="test">Mango</li>
+        <li>Pear</li>
+    </ul>
+
+    <script>
+        $(document).ready(function(){
+            $('*').css("background-color","darksalmon",);
+            $('#list').css("color","red",);
+            $('.test').css("border","2px solid green",);
+            $("li:first-child").css("background-color","white",);
+            $("li:last").css("background-color","Blue",);
+            $("ul li:eq(2)").css("color","black",);
+        });
+    </script>
+</body>
+</html>
