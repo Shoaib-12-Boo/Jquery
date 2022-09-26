@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery After Before</title>
+
+    <!-- J query file link extension -->
+    <script src="js file/jquery.js"></script>
+
+    <style>
+        #box{
+            background-color: green;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>J Query After Before MEthod</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, placeat!</p>
+    </div><br>
+
+    <button id="afterbtn" >After</button>
+    <button id="beforebtn" >Before</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#afterbtn').click(function(){
+                $('#box').after(" After : This is After");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#beforebtn').click(function(){
+                $('#box').before(" Before : This is After");
+            });
+        });
+    </script>
+</body>
+</html>
